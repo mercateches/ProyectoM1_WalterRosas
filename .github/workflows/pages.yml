@@ -25,7 +25,7 @@ jobs:
       - name: Subir archivos de Desarrollo
         uses: actions/upload-pages-artifact@v3
         with:
-          path: Desarrollo
+          path: .
 
   deploy:
     environment:
