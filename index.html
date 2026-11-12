@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primera fase del generador de paletas: una muestra de color estática.">
+    <title>Laboratorio de color | Fase 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="container">
+    <section class="intro" aria-labelledby="page-title">
+        <div class="intro__title">
+            <span>Tu laboratorio de color</span>
+            <h1 id="page-title">Un color lleva a otro.</h1>
+        </div>
+        <p class="intro__description">Esta es la primera etapa del proyecto: una muestra estática para presentar un color y sus valores.</p>
+    </section>
+
+    <section class="palette-toolbar" aria-label="Información de la paleta">
+        <div class="palette-toolbar__name">
+            <h2>Mi primer color</h2>
+            <span class="phase-label">Fase 1 · Muestra estática</span>
+        </div>
+    </section>
+
+    <section class="palette" aria-label="Muestra de color">
+        <article class="color-card">
+            <div class="color-preview" style="--color: #414DE8; --contrast: #FFFFFF;">
+                <span class="color-card__number">COLOR 01</span>
+                <span class="color-card__status">Muestra estática</span>
+            </div>
+            <div class="color-card__details">
+                <p class="color-card__label">Código HEX</p>
+                <p class="color-card__hex">#414DE8</p>
+                <p class="color-card__name">Azul índigo</p>
+                <p class="color-card__hsl">HSL: 236°, 79%, 58%</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="generator-controls" aria-label="Estado del proyecto">
+        <div class="generator-controls__status">
+            <strong>Un color visible</strong>
+            <p>En esta fase el color no cambia ni se genera automáticamente.</p>
+        </div>
+        <div class="generator-controls__main">
+            <span class="phase-message">La generación interactiva se incorporará en una fase posterior.</span>
+        </div>
+    </section>
+
+    <footer class="palette-footer">
+        <p>Proyecto integrador · Full Stack</p>
+        <span>Fase 1 / HTML y CSS</span>
+    </footer>
+</main>
+</body>
+</html>
