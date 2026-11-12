@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explora una paleta de seis colores generada dinámicamente con JavaScript.">
-    <title>Laboratorio de color | Fase 2</title>
+    <meta name="description" content="Genera paletas de colores aleatorias, explora combinaciones y copia códigos HEX fácilmente.">
+    <title>Laboratorio de color | Fase 3</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,37 +16,39 @@
             <span>Tu laboratorio de color</span>
             <h1 id="page-title">Un color lleva a otro.</h1>
         </div>
+
         <p class="intro__description">
-            Explora una selección de seis colores presentados dinámicamente.
-            Cada tono incluye su nombre y código HEX.
+            Genera combinaciones de colores aleatorias, descubre nuevas paletas
+            y copia los códigos HEX para utilizarlos en tus proyectos.
         </p>
     </section>
 
     <section class="palette-toolbar" aria-label="Información de la paleta">
         <div class="palette-toolbar__name">
             <h2>Mi paleta de colores</h2>
-            <span class="phase-label">Fase 2 · Paleta dinámica</span>
+            <span class="phase-label">Fase 3 · Generador interactivo</span>
         </div>
     </section>
 
     <section class="palette" aria-label="Paleta de seis colores">
     </section>
 
-    <section class="generator-controls" aria-label="Estado del proyecto">
+    <section class="generator-controls" aria-label="Controles del generador">
         <div class="generator-controls__status">
             <strong>6 colores disponibles</strong>
-            <p>Los colores se muestran dinámicamente mediante JavaScript.</p>
+            <p>Genera una nueva combinación cada vez que lo desees.</p>
         </div>
+
         <div class="generator-controls__main">
-            <span class="phase-message">
-                La generación aleatoria e interactiva se incorporará en la siguiente fase.
-            </span>
+            <button id="generate-btn" type="button">
+                Generar nueva paleta
+            </button>
         </div>
     </section>
 
     <footer class="palette-footer">
         <p>Proyecto integrador · Full Stack</p>
-        <span>Fase 2 / HTML, CSS y JavaScript</span>
+        <span>Fase 3 / HTML, CSS y JavaScript</span>
     </footer>
 
 </main>
