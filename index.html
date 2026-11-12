@@ -1,58 +1,56 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Primera fase del generador de paletas: una muestra de color estática.">
-    <title>Laboratorio de color | Fase 1</title>
+    <meta name="description" content="Explora una paleta de seis colores generada dinámicamente con JavaScript.">
+    <title>Laboratorio de color | Fase 2</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <main class="container">
+
     <section class="intro" aria-labelledby="page-title">
         <div class="intro__title">
             <span>Tu laboratorio de color</span>
             <h1 id="page-title">Un color lleva a otro.</h1>
         </div>
-        <p class="intro__description">Esta es la primera etapa del proyecto: una muestra estática para presentar un color y sus valores.</p>
+        <p class="intro__description">
+            Explora una selección de seis colores presentados dinámicamente.
+            Cada tono incluye su nombre y código HEX.
+        </p>
     </section>
 
     <section class="palette-toolbar" aria-label="Información de la paleta">
         <div class="palette-toolbar__name">
-            <h2>Mi primer color</h2>
-            <span class="phase-label">Fase 1 · Muestra estática</span>
+            <h2>Mi paleta de colores</h2>
+            <span class="phase-label">Fase 2 · Paleta dinámica</span>
         </div>
     </section>
 
-    <section class="palette" aria-label="Muestra de color">
-        <article class="color-card">
-            <div class="color-preview" style="--color: #414DE8; --contrast: #FFFFFF;">
-                <span class="color-card__number">COLOR 01</span>
-                <span class="color-card__status">Muestra estática</span>
-            </div>
-            <div class="color-card__details">
-                <p class="color-card__label">Código HEX</p>
-                <p class="color-card__hex">#414DE8</p>
-                <p class="color-card__name">Azul índigo</p>
-                <p class="color-card__hsl">HSL: 236°, 79%, 58%</p>
-            </div>
-        </article>
+    <section class="palette" aria-label="Paleta de seis colores">
     </section>
 
     <section class="generator-controls" aria-label="Estado del proyecto">
         <div class="generator-controls__status">
-            <strong>Un color visible</strong>
-            <p>En esta fase el color no cambia ni se genera automáticamente.</p>
+            <strong>6 colores disponibles</strong>
+            <p>Los colores se muestran dinámicamente mediante JavaScript.</p>
         </div>
         <div class="generator-controls__main">
-            <span class="phase-message">La generación interactiva se incorporará en una fase posterior.</span>
+            <span class="phase-message">
+                La generación aleatoria e interactiva se incorporará en la siguiente fase.
+            </span>
         </div>
     </section>
 
     <footer class="palette-footer">
         <p>Proyecto integrador · Full Stack</p>
-        <span>Fase 1 / HTML y CSS</span>
+        <span>Fase 2 / HTML, CSS y JavaScript</span>
     </footer>
+
 </main>
+
+<script src="js/app.js" defer></script>
 </body>
 </html>

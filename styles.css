@@ -199,10 +199,10 @@ button {
 
 .palette {
     display: grid;
-    grid-template-columns: minmax(220px, 1fr);
-    width: 100%;
-    max-width: 420px;
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
 }
 
 /* ========================================
@@ -210,22 +210,19 @@ button {
 ======================================== */
 
 .color-card {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .color-preview {
-    position: relative;
-    min-height: 340px;
+    height: 160px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 16px;
-    background: var(--color);
-    color: var(--contrast);
-    border-radius: 11px;
-    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
 }
 
 .color-card__number {
@@ -415,5 +412,16 @@ button {
         flex-direction: column;
         gap: 10px;
         text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .palette {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .palette {
+        grid-template-columns: 1fr;
     }
 }
