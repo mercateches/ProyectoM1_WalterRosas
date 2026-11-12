@@ -1,140 +1,226 @@
-# Generador de Paletas de Colores
+# Proyecto Integrador M1 — Generador de Paletas de Colores
+
+**Estudiante:** Walter Rosas  
+**Versión:** Final — Fase 4
 
 ## Descripción
 
-Generador de Paletas de Colores es una aplicación web estática desarrollada como proyecto integrador del Módulo 1 de Full Stack.
+Aplicación web interactiva para crear y explorar paletas de colores. Permite generar combinaciones aleatorias, bloquear colores para conservarlos, cambiar la cantidad de colores y alternar entre formatos HEX y HSL.
 
-El proyecto permite generar paletas de seis colores aleatorios, visualizar sus códigos HEX y copiarlos al portapapeles. Su desarrollo se realizó progresivamente, incorporando estructura HTML, estilos CSS y funcionalidades interactivas mediante JavaScript.
+## Funcionalidades
 
-## Estado del proyecto
+- Generación de paletas de 6, 9 o 12 colores.
+- Generación de colores aleatorios.
+- Bloqueo y desbloqueo de colores.
+- Visualización de valores HEX y HSL.
+- Copia del código de color al portapapeles.
+- Edición del nombre de la paleta.
+- Guardado de paletas en `localStorage`.
+- Exportación de paletas como archivo JSON.
+- Historial para deshacer y rehacer.
+- Atajo de teclado con la barra espaciadora.
+- Diseño responsive.
 
-**Fase 1: Estructura inicial y muestra estática**
+## Tecnologías
 
-Se desarrolló la estructura inicial de la aplicación utilizando HTML y CSS, presentando una muestra de color azul índigo (`#414DE8`) junto con sus valores de referencia.
+HTML5, CSS3 y JavaScript Vanilla. Se utilizan las APIs del navegador `localStorage`, Clipboard y Blob.
 
-**Fase 2: Paleta dinámica**
+## Estructura
 
-Se incorporó JavaScript para generar dinámicamente seis tarjetas de colores a partir de un array de objetos. Cada tarjeta presenta su color y su correspondiente código HEX.
+```text
+ProyectoM1_WalterRosas/
+├── .github/
+│   └── workflows/
+│       └── pages.yml
+├── js/
+│   └── app.js
+├── index.html
+├── styles.css
+└── README.md
+```
 
-También se implementó una distribución mediante CSS Grid y adaptación responsive para diferentes tamaños de pantalla.
+## Ejecución local
 
-**Fase 3: Generador interactivo**
+Abre la carpeta en Visual Studio Code y ejecuta `index.html` en un navegador. También puedes utilizar Live Server. No requiere dependencias ni instalación de paquetes.
 
-Se incorporaron funcionalidades para generar colores HEX aleatorios y actualizar dinámicamente las seis tarjetas de la paleta.
+## Publicación en GitHub Pages
 
-Además, se agregó un botón para generar nuevas combinaciones y la posibilidad de copiar códigos HEX al portapapeles, con una confirmación visual temporal.
+El repositorio incluye un workflow de GitHub Actions para publicar el contenido de la raíz. Sube los cambios a la rama `main`, verifica que el workflow termine correctamente en **Actions** y consulta la URL en **Settings → Pages**.
+
+## Notas
+
+Las paletas guardadas se almacenan en el navegador mediante `localStorage`; quedan disponibles en ese mismo navegador y dispositivo. La exportación descarga un archivo JSON con el nombre y los colores de la paleta.
+# Proyecto Integrador M1 — Generador de Paletas de Colores
+
+**Estudiante:** Walter Rosas  
+**Proyecto:** Generador de Paletas de Colores Interactivo  
+**Estado:** Proyecto finalizado — Fase 4
+
+## Descripción general
+
+El proyecto consiste en el desarrollo de una aplicación web interactiva para generar, explorar y administrar paletas de colores aleatorias.
+
+Se desarrolló progresivamente durante cuatro fases, aplicando los conocimientos adquiridos en HTML, CSS y JavaScript. Cada etapa incorporó nuevas funcionalidades y mejoras hasta completar una aplicación funcional, adaptable y dinámica.
+
+## Desarrollo por fases
+
+### Fase 1 — Estructura inicial
+
+Se establecieron las bases del proyecto mediante la creación de su estructura HTML y los primeros elementos de la interfaz.
+
+**Objetivos trabajados:**
+- Creación del documento HTML.
+- Organización de la estructura y contenido.
+- Incorporación de los elementos principales de la aplicación.
+- Preparación de los archivos del proyecto.
+
+### Fase 2 — Diseño y presentación visual
+
+Se incorporaron los estilos CSS para transformar la estructura inicial en una interfaz visual organizada y adaptable.
+
+**Objetivos trabajados:**
+- Aplicación de estilos y colores.
+- Organización de los elementos mediante CSS.
+- Diseño de las tarjetas de colores.
+- Distribución visual de la paleta.
+- Adaptación responsive para distintos dispositivos.
+
+### Fase 3 — Generador interactivo
+
+Se incorporó JavaScript para dar funcionalidad a la aplicación y permitir la generación dinámica de combinaciones de colores.
+
+**Objetivos trabajados:**
+- Generación aleatoria de colores.
+- Manipulación del DOM.
+- Actualización dinámica de las tarjetas.
+- Visualización de códigos HEX.
+- Interacción mediante eventos.
+- Organización de funciones y lógica JavaScript.
+
+### Fase 4 — Versión final y funcionalidades avanzadas
+
+Se completó la aplicación incorporando herramientas para administrar, personalizar y exportar las paletas generadas.
+
+**Funcionalidades incorporadas:**
+- Generación de paletas de 6, 9 y 12 colores.
+- Generación de combinaciones aleatorias.
+- Bloqueo y desbloqueo individual de colores.
+- Conversión y visualización de formatos HEX y HSL.
+- Copia de códigos de colores al portapapeles.
+- Personalización del nombre de las paletas.
+- Guardado de paletas mediante `localStorage`.
+- Exportación de paletas en formato JSON.
+- Historial de acciones con opciones para deshacer y rehacer.
+- Generación de paletas mediante la barra espaciadora.
+- Mejoras de diseño y adaptación responsive.
 
 ## Tecnologías utilizadas
 
-- **HTML5:** estructura y contenido de la aplicación.
-- **CSS3:** presentación visual, distribución de elementos, CSS Grid y diseño responsive.
-- **JavaScript:** generación aleatoria de colores, manipulación del DOM e interacción con el usuario.
-- **Git:** control de versiones.
-- **GitHub:** alojamiento del repositorio y publicación mediante GitHub Pages.
+| Tecnología | Aplicación |
+|---|---|
+| HTML5 | Estructura de la aplicación. |
+| CSS3 | Diseño visual y responsive. |
+| JavaScript | Lógica e interactividad. |
+| DOM | Manipulación dinámica del contenido. |
+| LocalStorage | Almacenamiento local de paletas. |
+| Clipboard API | Copia de códigos de color. |
+| Blob API | Generación de archivos JSON. |
+| Git | Control de versiones. |
+| GitHub | Repositorio y publicación. |
+| GitHub Pages | Despliegue de la aplicación. |
 
 ## Estructura del proyecto
 
 ```text
 ProyectoM1_WalterRosas/
-│
 ├── .github/
 │   └── workflows/
 │       └── pages.yml
-│
 ├── Documentacion/
 │   └── capturas/
-│
 ├── js/
 │   └── app.js
-│
 ├── index.html
 ├── styles.css
-├── .gitignore
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
-## Funcionalidades incluidas
+## Descripción de los archivos
 
-- Generación de una paleta de seis colores.
-- Generación aleatoria de componentes RGB.
-- Conversión de valores RGB a códigos HEX.
-- Actualización dinámica de los colores mediante JavaScript.
-- Botón para generar nuevas paletas.
-- Visualización de códigos HEX debajo de cada color.
-- Copiado de códigos HEX al portapapeles.
-- Confirmación visual temporal al copiar un color.
-- Diseño adaptable a diferentes tamaños de pantalla.
+- **index.html:** contiene la estructura principal de la aplicación.
+- **styles.css:** contiene los estilos, diseño visual y reglas responsive.
+- **js/app.js:** contiene la lógica de generación de colores, eventos, historial, almacenamiento y exportación.
+- **README.md:** documentación del proyecto y sus cuatro fases.
+- **.github/workflows/pages.yml:** configura la publicación automática mediante GitHub Actions.
+- **Documentacion/capturas/:** contiene evidencias visuales del desarrollo.
 
-## Conceptos de programación aplicados
+## Instalación y ejecución local
 
-Durante el desarrollo se trabajó con los siguientes conceptos:
+El proyecto no requiere instalación de dependencias adicionales.
 
-- Declaración de variables y constantes.
-- Arrays y objetos.
-- Funciones y valores de retorno.
-- Métodos `Math.random()` y `Math.floor()`.
-- Conversión numérica mediante `toString(16)`.
-- Formateo de cadenas con `padStart()`.
-- Template literals.
-- Manipulación del DOM.
-- Creación dinámica de elementos HTML.
-- Recorrido de elementos mediante `forEach()`.
-- Eventos con `addEventListener()`.
-- API Clipboard para copiar información.
-- Programación asíncrona mediante `async` y `await`.
-- Manejo de errores mediante `try...catch`.
-
-## Ejecución local
-
-La aplicación no requiere instalación de dependencias ni servidor backend.
-
-Para visualizarla localmente:
-
-1. Descargar o clonar el repositorio.
+1. Clonar o descargar el repositorio.
 2. Abrir la carpeta del proyecto en Visual Studio Code.
-3. Iniciar la aplicación abriendo `index.html` en un navegador o utilizando la extensión Live Server.
+3. Abrir el archivo `index.html` en un navegador.
+4. Opcionalmente, utilizar Live Server para ejecutar el proyecto desde Visual Studio Code.
 
-Se recomienda utilizar Live Server durante el desarrollo para facilitar la actualización y visualización de los cambios.
+## Instrucciones de uso
 
-## Publicación
+1. Abrir la aplicación y visualizar la paleta inicial.
+2. Seleccionar la cantidad de colores deseada.
+3. Generar nuevas combinaciones.
+4. Bloquear los colores que se quieran conservar.
+5. Cambiar entre formatos HEX y HSL.
+6. Copiar los códigos de color haciendo clic sobre ellos.
+7. Personalizar el nombre de la paleta.
+8. Guardar las paletas en el navegador.
+9. Exportar las combinaciones en formato JSON.
+10. Utilizar las opciones de deshacer y rehacer.
 
-El proyecto está configurado para publicarse mediante GitHub Pages.
+**Atajo de teclado:** barra espaciadora para generar una nueva paleta.
 
-La configuración de publicación utiliza la carpeta raíz del repositorio como origen del sitio y GitHub Actions para ejecutar el flujo de despliegue.
+## Almacenamiento y exportación
 
-**Repositorio:**  
-https://github.com/mercateches/ProyectoM1_WalterRosas
+Las paletas guardadas utilizan `localStorage`, por lo que permanecen almacenadas en el navegador y dispositivo donde se creó la información.
 
-**Aplicación publicada:**  
-https://mercateches.github.io/ProyectoM1_WalterRosas/
+La función de exportación permite descargar un archivo JSON con el nombre de la paleta y los valores de sus colores en formatos HEX y HSL.
 
-## Documentación visual
+## Publicación del proyecto
 
-### Fase 1 — Estructura inicial
+El proyecto se encuentra preparado para su publicación mediante GitHub Pages y GitHub Actions.
 
-Primera versión de la aplicación con una muestra estática de color.
+Para actualizar la versión publicada:
 
-### Fase 2 — Paleta dinámica
+```bash
+git add .
+git commit -m "feat: completar proyecto integrador fase 4"
+git push origin main
+```
 
-Implementación de seis tarjetas de colores generadas mediante JavaScript y distribución responsive.
+La publicación se ejecuta automáticamente mediante el workflow configurado en el repositorio.
 
-### Fase 3 — Generador interactivo
+## Objetivos de aprendizaje alcanzados
 
-Incorporación de generación aleatoria de colores HEX, actualización dinámica de la paleta y copiado de códigos al portapapeles.
+A través de las cuatro fases se aplicaron y reforzaron los siguientes conocimientos:
 
+- Estructuración de documentos con HTML5.
+- Diseño y organización visual con CSS3.
+- Uso de variables, funciones y estructuras de control en JavaScript.
+- Manipulación del DOM.
+- Manejo de eventos e interacciones.
+- Uso de APIs del navegador.
+- Almacenamiento de información en el navegador.
+- Organización de archivos y estructura de proyectos.
+- Control de versiones mediante Git.
+- Administración de repositorios en GitHub.
+- Publicación de aplicaciones web con GitHub Pages.
 
-## Próximas etapas
+## Conclusión
 
-Las siguientes funcionalidades podrán incorporarse progresivamente:
+El desarrollo del Generador de Paletas de Colores permitió evolucionar desde una estructura web básica hasta una aplicación interactiva con funcionalidades avanzadas.
 
-- Bloqueo individual de colores seleccionados.
-- Generación de paletas basadas en armonías cromáticas.
-- Guardado de paletas favoritas mediante `localStorage`.
-- Exportación de paletas.
-- Opciones adicionales de formato y gestión de colores.
+Cada fase representó un avance en la aplicación práctica de los conocimientos adquiridos durante el módulo, integrando HTML, CSS y JavaScript en un proyecto funcional.
 
-## Autor
+---
 
-**Walter Rosas**
-
-Proyecto integrador — Full Stack, Módulo 1.
+**Proyecto Integrador M1 — Walter Rosas**

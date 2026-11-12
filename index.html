@@ -1,58 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Genera paletas de colores aleatorias, explora combinaciones y copia códigos HEX fácilmente.">
-    <title>Laboratorio de color | Fase 3</title>
+    <title>Generador de Paletas de Colores Interactivo</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="js/app.js" defer></script>
 </head>
 <body>
 <main class="container">
 
-    <section class="intro" aria-labelledby="page-title">
+    <!-- Introducción -->
+    <section class="intro">
         <div class="intro__title">
             <span>Tu laboratorio de color</span>
-            <h1 id="page-title">Un color lleva a otro.</h1>
+            <h1>Un color lleva a otro.</h1>
         </div>
 
         <p class="intro__description">
-            Genera combinaciones de colores aleatorias, descubre nuevas paletas
-            y copia los códigos HEX para utilizarlos en tus proyectos.
+            Explora combinaciones inesperadas. Bloquea los
+            colores que te gustan y deja el resto al azar.
         </p>
     </section>
 
-    <section class="palette-toolbar" aria-label="Información de la paleta">
+    <!-- Barra de herramientas -->
+    <section class="palette-toolbar">
+
         <div class="palette-toolbar__name">
-            <h2>Mi paleta de colores</h2>
-            <span class="phase-label">Fase 3 · Generador interactivo</span>
+            <h2>Paleta sin título</h2>
+            <button type="button" aria-label="Editar nombre">✎</button>
+            <select aria-label="Cantidad de colores">
+                <option>6 colores</option>
+                <option>9 colores</option>
+                <option>12 colores</option>
+            </select>
         </div>
+
+        <div class="palette-toolbar__actions">
+            <select aria-label="Formato de color">
+                <option>HEX</option>
+                <option>HSL</option>
+            </select>
+
+            <button type="button">Guardar paleta</button>
+            <button type="button">Exportar</button>
+        </div>
+
     </section>
 
-    <section class="palette" aria-label="Paleta de seis colores">
+    <!-- Colores dinámicos -->
+    <section class="palette" aria-label="Paleta de colores">
+        <!-- JavaScript genera los article aquí -->
     </section>
 
-    <section class="generator-controls" aria-label="Controles del generador">
+    <!-- Controles inferiores -->
+    <section class="generator-controls">
+
         <div class="generator-controls__status">
-            <strong>6 colores disponibles</strong>
-            <p>Genera una nueva combinación cada vez que lo desees.</p>
+            <strong>2 colores bloqueados</strong>
+            <p>El candado conserva un color al volver a generar.</p>
         </div>
 
         <div class="generator-controls__main">
-            <button id="generate-btn" type="button">
-                Generar nueva paleta
+            <button type="button" id="generate-palette-btn">
+                ⇄ Generar nuevos colores
             </button>
+            <span>o pulsa Espacio para explorar</span>
         </div>
+
+        <div class="generator-controls__history">
+            <button type="button">↶ Deshacer</button>
+            <button type="button">↷</button>
+        </div>
+
     </section>
 
+    <!-- Información inferior -->
     <footer class="palette-footer">
-        <p>Proyecto integrador · Full Stack</p>
-        <span>Fase 3 / HTML, CSS y JavaScript</span>
+        <p>Haz clic en un código HEX para copiarlo.</p>
+        <span>sRGB / Hecho para experimentar</span>
     </footer>
 
 </main>
-
-<script src="js/app.js" defer></script>
 </body>
 </html>
